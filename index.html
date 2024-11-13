@@ -26,7 +26,7 @@
             width: 45%; /* Each image takes up 30% of the container's width */
              /* Restrict the maximum width of each image */
             height: auto; /* Maintain aspect ratio */
-             /* Restrict the maximum height of each image */
+            max-height: 500px;/* Restrict the maximum height of each image */
             border: 1px solid #ccc; /* Optional: adds a border around the images */
             border-radius: 5px; /* Optional: rounded corners */
              /* Ensures images are cropped and fitted well within the given size */
@@ -182,7 +182,34 @@
 									</ul>
 								</footer>
 							</article>
-						
+						<!-- Post2 -->
+						<article class="post">
+							<header>
+								<div class="title">
+									<h2 id="3D reconstruction">Multi-view 3D Reconstruction using Bundle Adjustment</h2>
+									<p>Sparse 3D Reconstruction </p>
+								</div>
+								<div class="meta">
+									<time class="published" datetime="2015-11-01">Nov 2024 - May 2022</time>
+									<!--<a href="https://github.com/amithachari/Autonomous_Pipeline" class="author"><span class="name">GitHub</span><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" /></a>-->
+								</div>
+							</header>
+							<!-- <a href="single.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a> -->
+							</iframe>
+							<div class="image-container">
+								<img src="assets/buddha_014.png" alt="buddha Image">
+								<img src="assets/budda.png" alt="buddha Point Cloud">
+							</div>
+							<p><br>•	Performed point cloud reconstruction on a set of 24 2D images using GTSAM.
+								<br>•	Computed and optimized the final camera poses for 3D reconstruction using bundle adjustment through GTSAM.
+								</p>
+							<footer>
+								
+								<ul class="stats">
+									<li> Python | OpenCV | Bundle Adjustment | Epipolar Geometery </li>
+								</ul>
+							</footer>
+						</article>						
 							
 						<!-- Post2 -->
 						<article class="post">

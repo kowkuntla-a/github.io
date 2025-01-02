@@ -98,7 +98,7 @@
 											<a href="#Large-Scale Underwater Images Mosaicing"><p>Large-Scale Underwater Images Mosaicing</p></a>
 											<a href="#Multi-view Geometery"><p>Multi-view Geometery</p></a>
 											<a href="#Underwater Image Segmentation"><p>Self-Supervised Pre-trained model for Underwater Image Segmentation</p></a>
-											<a href="#Depth"><p>Efficient Depth Estimation Using RAFT-Stereo and NEUFlow-V2</p></a>
+											<a href="#Depth Map"><p>Efficient Depth Estimation Using RAFT-Stereo and NEUFlow-V2</p></a>
 
 
 										</a>
@@ -131,7 +131,16 @@
 					<div id="main">
 						
 						<h2 id="Work_Experience">Work Experience</h2>
-									<h3 id="Bosch"><a href="https://www.bosch-softwaretechnologies.com/en/">Robert Bosch</a></h3>
+									
+							<h3 id="NEUFR"><a href="https://robotics.northeastern.edu/">Northeastern Field Robotics Lab, Boston, MA</a></h3>
+							<h4><b>Designation:</b> Graduate Research Assistant</h4>
+							<blockquote> 
+								•	Implementing ORB-SLAM on Boston Dynamics Spot using LiDAR and camera data for multi-map generation and enhanced localization.
+								<br>•	Researched rectified stereo and disparity concepts to generate depth maps on edge devices like NVIDIA Jetson Orin Nano.
+								
+							</blockquote>
+
+							<h3 id="Bosch"><a href="https://www.bosch-softwaretechnologies.com/en/">Robert Bosch</a></h3>
 									<h4><b>Locations:</b> India, Hungary</h4>
 									<h4><b>Designation:</b> Function Owner/ Lead System Developer </h4>
 									<h4><b>Client Name:</b> Honda, Nissan and Mazda </h4>
@@ -146,13 +155,6 @@
 										
 										</blockquote>
 						
-							<h3 id="NEUFR"><a href="https://robotics.northeastern.edu/">Northeastern Field Robotics Lab, Boston, MA</a></h3>
-							<h4><b>Designation:</b> Graduate Research Assistant</h4>
-							<blockquote> 
-								•	Implementing ORB-SLAM on Boston Dynamics Spot using LiDAR and camera data for multi-map generation and enhanced localization.
-								<br>•	Researched rectified stereo and disparity concepts to generate depth maps on edge devices like NVIDIA Jetson Orin Nano.
-								
-							</blockquote>
 									
 										
 
@@ -167,7 +169,7 @@
 									<h2 id="Large-Scale Underwater Images Mosaicing">Large-Scale Underwater Images Mosaicing</h2>
 									</div>
 									<div class="meta">
-										<time class="published" datetime="2015-11-01">Oct 2024 - Nov 2024</time>
+										<time class="published" datetime="2015-11-01">Fall 2024</time>
 										<!--<a href="https://github.com/amithachari/ECE484_Final_Project" class="author"><span class="name">GitHub</span><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" /></a>-->
 									</div>
 								</header>
@@ -203,12 +205,12 @@
 									<p>Sparse 3D Reconstruction </p>
 								</div>
 								<div class="meta">
-									<time class="published" datetime="2015-11-01">Nov 2024 - May 2022</time>
+									<time class="published" datetime="2015-11-01">Fall 2022</time>
 									<!--<a href="https://github.com/amithachari/Autonomous_Pipeline" class="author"><span class="name">GitHub</span><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" /></a>-->
 								</div>
 							</header>
 							<!-- <a href="single.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a> -->
-							</iframe>
+
 
 							<p><br>•	Performed point cloud reconstruction on a set of 24 2D images using GTSAM.
 								<br>•	Computed and optimized the final camera poses for 3D reconstruction using bundle adjustment through GTSAM.
@@ -216,7 +218,7 @@
 								<div class="image-container single-image">
 									<img src="assets/buddha_014.png" alt="buddha Image">
 								</div>
-							<iframe width="1000" height="320"
+							<iframe width="750" height="320"
 								src="https://www.youtube.com/embed/MExOmLeqfpY">
 							</iframe>
 							<footer>
@@ -226,8 +228,113 @@
 								</ul>
 							</footer>
 						</article>						
-							
+						
+						<article class="post">
+							<header>
+								<div class="title">
+									<!--<h2 id="Planning"><a href="assets\ProjectPresentation_EECE5644_IPL Score Predictor.pdf">Indian Premier League (IPL) Score Predictor</a></h2>-->
+								<h2 id="Underwater Image Segmentation">Self-Supervised Pre-trained model for Underwater Image Segmentation</h2>
+								</div>
+								<div class="meta">
+									<time class="published" datetime="2015-11-01">Fall 2024</time>
+									<!--<a href="https://github.com/amithachari/ECE484_Final_Project" class="author"><span class="name">GitHub</span><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" /></a>-->
+								</div>
+							</header>
+
+							<!-- <a href="single.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a> -->
+							</iframe>
+
+							<p><i>Current approaches to underwater image segmentation primarily focus on either fully training models on a
+								single dataset or employing transfer learning techniques by pretraining encoders on terrestrial image datasets.
+								However, these methods often struggle with domain adaptation challenges inherent to underwater environ-
+								ments. To address these limitations, our methodology leverages the SimCLR framework with a ResNet-50
+								backbone to pretrain a model capable of learning robust feature embeddings in an unsupervised manner.
+								</i>
+							<br>
+							<br>	•	Pretrained using SimCLR on the UFO dataset with advanced data augmentation for underwater image features.
+							<br>	• Levarged SimCLR's constrastive loss to achieve minimum distance between positive features in feature space.
+							<br>	• Exploited U-Net's Encoder-Decoder architecture for fine-tuning for SUIM dataset.	
+							<br>	•	Fine-tuned U-Net on the SUIM dataset, achieving 0.70 pixel accuracy (baseline: 0.67) using a hybrid loss function, that 
+										combines dice loss(attention to thin features) and cross entropy loss(minimize pixel to pixel loss).
+							</p>
+							<!-- First row of images -->
+							<div class="image-container single-image">
+								<img src="assets/underwater.png" alt="Underwater Segmentation">
+							</div>
+													
+							<footer>
+								
+								<ul class="stats">
+									<li> OpenCV | Python | Deep learning </li>
+								</ul>
+							</footer>
+						</article>
+					
+						<article class="post">
+							<header>
+								<div class="title">
+									<!--<h2 id="Planning"><a href="assets\ProjectPresentation_EECE5644_IPL Score Predictor.pdf">Indian Premier League (IPL) Score Predictor</a></h2>-->
+								<h2 id="Depth Map">Efficient Depth Estimation Using RAFT-Stereo and NEUFlow-V2</h2>
+								</div>
+								<div class="meta">
+									<time class="published" datetime="2015-11-01">Fall 2024</time>
+									<!--<a href="https://github.com/amithachari/ECE484_Final_Project" class="author"><span class="name">GitHub</span><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" /></a>-->
+								</div>
+							</header>
+							<p>
+								•	Generated depth maps from rectified stereo setups by integrating disparity-based estimation into the NEUFlow-V2 framework, optimizing computational efficiency on edge devices.
+							<br>•	Combined the correlation pyramid framework from RAFT-Stereo with the frame rate efficiency of NEUFlow-V2 to enhance real-time processing capabilities.
+							<br>•	Achieved an End-Point Error (EPE) of 3.8 on the FlyingThings dataset, demonstrating accurate and efficient disparity-based depth estimation.
+							</p>
+							<!-- First row of images -->
+							<div class="image-container">
+								<img src="assets/Depth_Map_1.png" alt="Depth_Map_1">
+								<img src="assets/Depth_Map_2.png" alt="Depth_Map_2">
+							</div>
+													
+							<footer>
+								
+								<ul class="stats">
+									<li> OpenCV | Python | Deep learning </li>
+								</ul>
+							</footer>
+						</article>
+
 						<!-- Post2 -->
+						<article class="post">
+							<header>
+								<div class="title">
+									<h2 id="DaVinciRobot">Remote Center of Motion Healthcare Robot Model with Kinematic Analysis</h2>
+								</div>
+								<div class="meta">
+									<time class="published" datetime="2015-11-01">Spring 2024</time>
+									<!--<a href="https://github.com/amithachari/Autonomous_Pipeline" class="author"><span class="name">GitHub</span><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" /></a>
+								--></div>
+							</header>
+							<!-- <a href="single.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a> -->
+							</iframe>
+							<p>
+								<i>
+									Robotic-assisted RCM (Remote Center of Motion) systems significantly enhance the efficiency 
+									and precision of minimally invasive surgery. These robots help in aiding surgeons in navigating 
+									small incisions with heightened accuracy and control. 
+									The integration of RCM robots elevates the standard of care in small invasive surgeries, 
+									promising improved outcomes for patients and advancing the field of surgical innovation.
+								</i>
+							<br>
+							<br>• Designed a Remote Center of Motion healthcare robot model using SolidWorks, focusing on precision and functionality for surgical applications.  
+							<br>• Conducted forward and inverse kinematics calculations to ensure accurate positioning and movement of robotic arms.  
+							</p>
+							<iframe width="750" height="320"
+								src="https://youtube.com/embed/XPMa1X8JMDs">
+							</iframe>
+							<footer>
+
+								<ul class="stats">
+									<li> SolidWorks </li>
+								</ul>
+							</footer>
+						</article>
 						<article class="post">
 							<header>
 								<div class="title">
@@ -235,7 +342,7 @@
 									<p>Comparative Analysis of Lio-Sam and Lego-Loam SLAM Techniques </p>
 								</div>
 								<div class="meta">
-									<time class="published" datetime="2015-11-01">Jan 2022 - May 2022</time>
+									<time class="published" datetime="2015-11-01">Spring 2024</time>
 									<!--<a href="https://github.com/amithachari/Autonomous_Pipeline" class="author"><span class="name">GitHub</span><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" /></a>
 								--></div>
 							</header>

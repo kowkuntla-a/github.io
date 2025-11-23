@@ -1,839 +1,435 @@
-<!DOCTYPE HTML>
-<!--
-	Future Imperfect by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Abhinav Reddy Kowkuntla</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
+<!DOCTYPE html>
+<html lang="en">
 
-	<style>
-        /* Container to hold the images */
-        .image-container {
-            display: flex;
-            flex-wrap: wrap; /* Allow images to wrap to the next row if needed */
-            justify-content: space-between; /* Distribute the images evenly */
-            gap: 10px; /* Space between the images */
-        }
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Abhinav Reddy Kowkuntla | Robotics Portfolio</title>
 
-        /* Style for each image */
-        .image-container img {
-            width: 45%; /* Each image takes up 30% of the container's width */
-             /* Restrict the maximum width of each image */
-            height: auto; /* Maintain aspect ratio */
-            max-height: 500px;/* Restrict the maximum height of each image */
-            border: 1px solid #ccc; /* Optional: adds a border around the images */
-            border-radius: 5px; /* Optional: rounded corners */
-             /* Ensures images are cropped and fitted well within the given size */
-        }
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-		.image-container.single-image {
-            justify-content: center; /* Center horizontally */
-        }
-    </style>
+	<!-- Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
+	<!-- Swiper CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-	<body class="is-preload">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<body>
 
-				<!-- Header -->
-					<header id="header">
-						<h1><a href="index.html">Abhinav Reddy Kowkuntla</a></h1>
-						<nav class="links">
-							<ul>
-								<li><a href="#Work_Experience">Work Experience</a></li>
-								<li><a href="#Projects">Projects</a></li>
-								<li><a href="https://www.linkedin.com/in/abhinav-reddy-kowkuntla-041059170/">LinkedIn</a></li>
-								<li><a href="https://gitlab.com/kowkuntla-a">Github</a></li>
-								<li><a href="assets/Abhinav Reddy Kowkuntla.pdf">Resume</a></li>
-								<li><a href="#About">About</a></li>
+	<!-- Header -->
+	<header>
+		<div class="nav-container">
+			<nav class="nav-links">
+				<a href="#" id="projects-link">Projects</a>
+				<a href="assets/Abhinav Reddy Kowkuntla.pdf" target="_blank">Resume</a>
+				<a href="https://www.linkedin.com/in/abhinav-reddy-kowkuntla-041059170/" target="_blank">LinkedIn</a>
+			</nav>
+		</div>
+	</header>
 
-							</ul>
-						</nav>
-						<nav class="main">
-							<ul>
-								<li class="search">
-									<a class="fa-search" href="#search">Search</a>
-									<form id="search" method="get" action="#">
-										<input type="text" name="query" placeholder="Search" />
-									</form>
-								</li>
-								<li class="menu">
-									<a class="fa-bars" href="#menu">Menu</a>
-								</li>
-							</ul>
-						</nav>
-					</header>
+	<!-- Hero Section -->
+	<section class="hero">
+		<div class="container hero-content">
+			<div class="hero-image">
+				<img src="images/Abhinav.jpg" alt="Abhinav Reddy Kowkuntla">
+			</div>
+			<div class="hero-text">
+				<h1>Abhinav Reddy Kowkuntla</h1>
+				<p class="subtitle">Perception | Navigation | Sensor Fusion | Robotics</p>
+				<p>
+					I am a Graduate Research Assistant at the Northeastern Field Robotics Lab, passionate about SLAM,
+					Computer Vision, and Deep Learning.
+					I specialize in building robust perception systems for autonomous robots, from underwater mosaicing
+					to multi-robot SLAM.
+				</p>
+				<div class="social-links">
+					<a href="https://www.linkedin.com/in/abhinav-reddy-kowkuntla-041059170/" target="_blank"><i
+							class="fab fa-linkedin"></i></a>
+					<a href="https://gitlab.com/kowkuntla-a" target="_blank"><i class="fab fa-github"></i></a>
+					<a href="mailto:kowkuntla.a@northeastern.edu"><i class="fas fa-envelope"></i></a>
+				</div>
+			</div>
+		</div>
+	</section>
 
-				<!-- Menu -->
-					<section id="menu">
+	<!-- Expertise Section -->
+	<section class="expertise-section">
+		<div class="container">
+			<div class="section-header">
+				<h2>Core Expertise</h2>
+			</div>
+			<div class="expertise-grid">
 
-						<!-- Search -->
-							<section>
-								<form class="search" method="get" action="#">
-									<input type="text" name="query" placeholder="Search" />
-								</form>
-							</section>
+				<!-- Card 1: Visual SLAM -->
+				<div class="expertise-card">
+					<div class="expertise-icon"><i class="fas fa-map-marked-alt"></i></div>
+					<h3>Visual SLAM</h3>
+					<ul>
+						<li>Frontend & Backend Development</li>
+						<li>Bundle Adjustment & Factor Graphs</li>
+						<li>Multi-Map Generation</li>
+						<li>Loop Closure Detection</li>
+					</ul>
+				</div>
 
-						<!-- Links -->
-							<section>
-								<ul class="links">
-									<li>
-										<a href="#Work_Experience">
-											<h3>Work Experience</h3>
-											<a href="#NEUFR"><p>• Graduate Research Assistant - Northeastern Field Robotics Lab</p></a>
-											<a href="#Bosch"><p>• Function Owner - Robert Bosch</p></a>
-										</a>
-									</li>
-									<li>
-										<a href="#Projects">
-											<h3>Projects</h3></a>
-											<a href="#Large-Scale Underwater Images Mosaicing"><p>• Large-Scale Underwater Images Mosaicing</p></a>
-											<a href="#SFM"><p>• Multi-view Geometery</p></a>
-											<a href="#Underwater Image Segmentation"><p>• Self-Supervised Pre-trained model for Underwater Image Segmentation</p></a>
-											<a href="#Depth Map"><p>• Efficient Depth Estimation Using RAFT-Stereo and NEUFlow-V2</p></a>
-											<a href="#RCM"><p>• Remote Center of Motion Healthcare Robot Model</p></a>
-											<a href="#SLAM"><p>• SLAM</p></a>
+				<!-- Card 2: Deep Learning -->
+				<div class="expertise-card">
+					<div class="expertise-icon"><i class="fas fa-brain"></i></div>
+					<h3>Deep Learning</h3>
+					<ul>
+						<li>Transformers & Attention Mechanisms</li>
+						<li>Vision Transformers (ViT)</li>
+						<li>Neural Rendering (NeRF, Gaussian Splatting)</li>
+						<li>Generative Models (GANs, Diffusion)</li>
+						<li>TensorRT Optimization</li>
+					</ul>
+				</div>
 
+				<!-- Card 3: 3D Perception -->
+				<div class="expertise-card">
+					<div class="expertise-icon"><i class="fas fa-cube"></i></div>
+					<h3>3D Perception</h3>
+					<ul>
+						<li>Stereo Camera Calibration</li>
+						<li>Depth Estimation & Disparity</li>
+						<li>Sensor Fusion (LiDAR + Camera)</li>
+						<li>Point Cloud Processing</li>
+					</ul>
+				</div>
 
-										</a>
-									</li>
-									<!-- <li>
-										<a href="#">
-											<h3>Feugiat veroeros</h3>
-											<p>Phasellus sed ultricies mi congue</p>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<h3>Etiam sed consequat</h3>
-											<p>Porta lectus amet ultricies</p>
-										</a>
-									</li> -->
-								</ul>
-							</section>
-
-						<!-- Actions -->
-							<section>
-								<ul class="actions stacked">
-									<li><a href="#" class="button large fit">Log In</a></li>
-								</ul>
-							</section>
-
-					</section>
-					
-				<!-- Main -->
-					<div id="main">
-						
-						<h2 id="Work_Experience">Work Experience</h2>
-									
-							<h3 id="NEUFR"><a href="https://robotics.northeastern.edu/">Northeastern Field Robotics Lab, Boston, MA</a></h3>
-							<h4><b>Designation:</b> Graduate Research Assistant</h4>
-							<blockquote> 
-								•	Implementing ORB-SLAM on Boston Dynamics Spot using LiDAR and camera data for multi-map generation and enhanced localization.
-								<br>•	Researching on rectified stereo and disparity concepts to generate depth maps on edge devices like NVIDIA Jetson Orin Nano.
-								
-							</blockquote>
-
-							<h3 id="Bosch"><a href="https://www.bosch-softwaretechnologies.com/en/">Robert Bosch</a></h3>
-									<h4><b>Locations:</b> India, Hungary</h4>
-									<h4><b>Designation:</b> Function Owner/ Lead System Developer </h4>
-									<h4><b>Client Name:</b> Honda, Nissan and Mazda </h4>
-									<blockquote> •	Performed Model Based Development using Simulink for Application Software of Driver Assistance Systems (ADAS) in Four-Wheeler Automatic Parking Systems
-										<br>•	Developed Base Software using C and C++ for Failure Management and Communication modules based on AUTOSAR architecture.
-										<br>•	Supervised and handled GitHub and Jenkins as project administrator for the team consisting of 20 associates.
-										
-										<br>•	Deployed Code into ECUs (Embedded Systems) using WinIdea Environment for developer code performance testing.
-										<br>•	Administered Software Development Life Cycle for analyzing of requirements, design, development and testing.
-										<br>•	Negotiated project requirements and design with customers based out of Asia Pacific regions and project stakeholders based out of Europe.
-										<br>•	Awarded as “Out of the Box Thinker” and “Lead by Example” among a team consisting of 20 associates.
-										
-										</blockquote>
-						
-									
-										
-
-										
-									
-						<!-- Post -->
-						<h2 id="Projects">Projects</h2>
-							<article class="post">
-								<header>
-									<div class="title">
-										<!--<h2 id="Planning"><a href="assets\ProjectPresentation_EECE5644_IPL Score Predictor.pdf">Indian Premier League (IPL) Score Predictor</a></h2>-->
-									<h2 id="Large-Scale Underwater Images Mosaicing">Large-Scale Underwater Images Mosaicing</h2>
-									</div>
-									<div class="meta">
-										<time class="published" datetime="2015-11-01">Fall 2024</time>
-										<!--<a href="https://github.com/amithachari/ECE484_Final_Project" class="author"><span class="name">GitHub</span><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" /></a>-->
-									</div>
-								</header>
-
-								<!-- <a href="single.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a> -->
-								</iframe>
-
-								<p>•	Calculated Homography and performed optimization using GTSAM factor graph techniques for creating a mosaic containing 200 underwater images.
-									<br>•	Extracted features and performed loop closures on overlapping images using factor graph for accurate image placement.
-									<br>•	Referenced and utilized the same dataset used in <a href="https://ieeexplore.ieee.org/document/1255512">“O. Pizarro and H. Singh, "Toward large-area mosaicing for underwater scientific applications".</a>
-									</p>
-								<!-- First row of images -->
-								<div class="image-container">
-									<img src="assets/108_prefactor_graph.png" alt="Pre Opimization">
-									<img src="assets/108_postfactor_graph.png" alt="Post Opimization">
-								</div>
-								<div class="image-container single-image">
-									<img src="assets/canvas_108.jpg" alt="108 Canvas">
-								</div>
-														
-								<footer>
-									
-									<ul class="stats">
-										<li> OpenCV | Python | MATLAB </li>
-									</ul>
-								</footer>
-							</article>
-						<!-- Post2 -->
-						<article class="post">
-							<header>
-								<div class="title">
-									<h2 id="SFM">Multi-view 3D Reconstruction using Bundle Adjustment</h2>
-									<p>Sparse 3D Reconstruction </p>
-								</div>
-								<div class="meta">
-									<time class="published" datetime="2015-11-01">Fall 2024</time>
-									<!--<a href="https://github.com/amithachari/Autonomous_Pipeline" class="author"><span class="name">GitHub</span><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" /></a>-->
-								</div>
-							</header>
-							<!-- <a href="single.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a> -->
-
-
-							<p><br>•	Performed point cloud reconstruction on a set of 24 2D images using GTSAM.
-								<br>•	Computed and optimized the final camera poses for 3D reconstruction using bundle adjustment through GTSAM.
-								</p>
-								<div class="image-container single-image">
-									<img src="assets/buddha_014.png" alt="buddha Image">
-								</div>
-							<iframe width="750" height="320"
-								src="https://www.youtube.com/embed/MExOmLeqfpY">
-							</iframe>
-							<footer>
-								
-								<ul class="stats">
-									<li> Python | OpenCV | Bundle Adjustment | Epipolar Geometery </li>
-								</ul>
-							</footer>
-						</article>						
-						
-						<article class="post">
-							<header>
-								<div class="title">
-									<!--<h2 id="Planning"><a href="assets\ProjectPresentation_EECE5644_IPL Score Predictor.pdf">Indian Premier League (IPL) Score Predictor</a></h2>-->
-								<h2 id="Underwater Image Segmentation">Self-Supervised Pre-trained model for Underwater Image Segmentation</h2>
-								</div>
-								<div class="meta">
-									<time class="published" datetime="2015-11-01">Fall 2024</time>
-									<!--<a href="https://github.com/amithachari/ECE484_Final_Project" class="author"><span class="name">GitHub</span><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" /></a>-->
-								</div>
-							</header>
-
-							<!-- <a href="single.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a> -->
-							</iframe>
-
-							<p><i>Current approaches to underwater image segmentation primarily focus on either fully training models on a
-								single dataset or employing transfer learning techniques by pretraining encoders on terrestrial image datasets.
-								However, these methods often struggle with domain adaptation challenges inherent to underwater environ-
-								ments. To address these limitations, our methodology leverages the SimCLR framework with a ResNet-50
-								backbone to pretrain a model capable of learning robust feature embeddings in an unsupervised manner.
-								</i>
-							<br>
-							<br>	•	Pretrained using SimCLR on the UFO dataset with advanced data augmentation for underwater image features.
-							<br>	• Levarged SimCLR's constrastive loss to achieve minimum distance between positive features in feature space.
-							<br>	• Exploited U-Net's Encoder-Decoder architecture for fine-tuning for SUIM dataset.	
-							<br>	•	Fine-tuned U-Net on the SUIM dataset, achieving 0.70 pixel accuracy (baseline: 0.67) using a hybrid loss function, that 
-										combines dice loss(attention to thin features) and cross entropy loss(minimize pixel to pixel loss).
-							</p>
-							<!-- First row of images -->
-							<div class="image-container single-image">
-								<img src="assets/underwater.png" alt="Underwater Segmentation">
-							</div>
-													
-							<footer>
-								
-								<ul class="stats">
-									<li> OpenCV | Python | Deep learning </li>
-								</ul>
-							</footer>
-						</article>
-					
-						<article class="post">
-							<header>
-								<div class="title">
-									<!--<h2 id="Planning"><a href="assets\ProjectPresentation_EECE5644_IPL Score Predictor.pdf">Indian Premier League (IPL) Score Predictor</a></h2>-->
-								<h2 id="Depth Map">Efficient Depth Estimation Using RAFT-Stereo and NEUFlow-V2</h2>
-								</div>
-								<div class="meta">
-									<time class="published" datetime="2015-11-01">Fall 2024</time>
-									<!--<a href="https://github.com/amithachari/ECE484_Final_Project" class="author"><span class="name">GitHub</span><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" /></a>-->
-								</div>
-							</header>
-							<p>
-								•	Generated depth maps from rectified stereo setups by integrating disparity-based estimation into the NEUFlow-V2 framework, optimizing computational efficiency on edge devices.
-							<br>•	Combined the correlation pyramid framework from RAFT-Stereo with the frame rate efficiency of NEUFlow-V2 to enhance real-time processing capabilities.
-							<br>•	Achieving an End-Point Error (EPE) of 3.8 on the FlyingThings dataset as initial results, demonstrating accurate and efficient disparity-based depth estimation.
-							</p>
-							<!-- First row of images -->
-							<div class="image-container">
-								<img src="assets/Depth_Map_1.png" alt="Depth_Map_1">
-								<img src="assets/Depth_Map_2.png" alt="Depth_Map_2">
-							</div>
-													
-							<footer>
-								
-								<ul class="stats">
-									<li> OpenCV | Python | Deep learning </li>
-								</ul>
-							</footer>
-						</article>
-
-						<!-- Post2 -->
-						<article class="post">
-							<header>
-								<div class="title">
-									<h2 id="RCM">Remote Center of Motion Healthcare Robot Model with Kinematic Analysis</h2>
-								</div>
-								<div class="meta">
-									<time class="published" datetime="2015-11-01">Spring 2024</time>
-									<!--<a href="https://github.com/amithachari/Autonomous_Pipeline" class="author"><span class="name">GitHub</span><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" /></a>
-								--></div>
-							</header>
-							<!-- <a href="single.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a> -->
-							</iframe>
-							<p>
-								<i>
-									Robotic-assisted RCM (Remote Center of Motion) systems significantly enhance the efficiency 
-									and precision of minimally invasive surgery. These robots help in aiding surgeons in navigating 
-									small incisions with heightened accuracy and control. 
-									The integration of RCM robots elevates the standard of care in small invasive surgeries, 
-									promising improved outcomes for patients and advancing the field of surgical innovation.
-								</i>
-							<br>
-							<br>• Designed a Remote Center of Motion healthcare robot model using SolidWorks, focusing on precision and functionality for surgical applications.  
-							<br>• Conducted forward and inverse kinematics calculations to ensure accurate positioning and movement of robotic arms.  
-							</p>
-							<iframe width="750" height="320"
-								src="https://youtube.com/embed/XPMa1X8JMDs">
-							</iframe>
-							<footer>
-
-								<ul class="stats">
-									<li> SolidWorks </li>
-								</ul>
-							</footer>
-						</article>
-						<article class="post">
-							<header>
-								<div class="title">
-									<h2 id="SLAM"><a href="single.html">Simultaneous Localization and Mapping (SLAM)</a></h2>
-									<p>Comparative Analysis of Lio-Sam and Lego-Loam SLAM Techniques </p>
-								</div>
-								<div class="meta">
-									<time class="published" datetime="2015-11-01">Spring 2024</time>
-									<!--<a href="https://github.com/amithachari/Autonomous_Pipeline" class="author"><span class="name">GitHub</span><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" /></a>
-								--></div>
-							</header>
-							<!-- <a href="single.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a> -->
-							</iframe>
-							<p>▪ Conducted a comprehensive comparative analysis of LiDAR-based 3D mapping techniques: LeGO-LOAM and LIO-SAM
-								<br>▪ Compared trajectories with ground truth in simulation using Root mean square error and Absolute trajectory error metrics in Python
-								<br>▪ Assessed RMSE and ATE values to evaluate performance across different environments with TurtleBot simulations in Gazebo environments
-								 </p>
-							<footer>
-								<ul class="actions">
-									<li><a href="https://github.com/amithachari/Autonomous_Pipeline" ></a></li>
-								</ul>
-								<ul class="stats">
-									<li> ROS | Python | Gazebo | RViz </li>
-								</ul>
-							</footer>
-						</article>
-
-						
-
-						<!-- Post -->
-						
-							<!--article class="post">
-								<header>
-									<div class="title">
-										<h2><a href="#">Elements</a></h2>
-										<p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p>
-									</div>
-									<div class="meta">
-										<time class="published" datetime="2015-10-18">October 18, 2015</time>
-										<a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
-									</div>
-								</header>
-
-								<section>
-									<h3>Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-  print 'Iteration ' + i;
-  deck.shuffle();
-  i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
-
-								<section>
-									<h3>Lists</h3>
-									<div class="row">
-										<div class="col-6 col-12-medium">
-											<h4>Unordered</h4>
-											<ul>
-												<li>Dolor pulvinar etiam.</li>
-												<li>Sagittis adipiscing.</li>
-												<li>Felis enim feugiat.</li>
-											</ul>
-											<h4>Alternate</h4>
-											<ul class="alt">
-												<li>Dolor pulvinar etiam.</li>
-												<li>Sagittis adipiscing.</li>
-												<li>Felis enim feugiat.</li>
-											</ul>
-										</div>
-										<div class="col-6 col-12-medium">
-											<h4>Ordered</h4>
-											<ol>
-												<li>Dolor pulvinar etiam.</li>
-												<li>Etiam vel felis viverra.</li>
-												<li>Felis enim feugiat.</li>
-												<li>Dolor pulvinar etiam.</li>
-												<li>Etiam vel felis lorem.</li>
-												<li>Felis enim et feugiat.</li>
-											</ol>
-											<h4>Icons</h4>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-											</ul>
-										</div>
-									</div>
-									<h3>Actions</h3>
-									<div class="row">
-										<div class="col-6 col-12-medium">
-											<ul class="actions">
-												<li><a href="#" class="button">Default</a></li>
-												<li><a href="#" class="button">Default</a></li>
-												<li><a href="#" class="button">Default</a></li>
-											</ul>
-											<ul class="actions small">
-												<li><a href="#" class="button small">Small</a></li>
-												<li><a href="#" class="button small">Small</a></li>
-												<li><a href="#" class="button small">Small</a></li>
-											</ul>
-											<ul class="actions stacked">
-												<li><a href="#" class="button">Default</a></li>
-												<li><a href="#" class="button">Default</a></li>
-												<li><a href="#" class="button">Default</a></li>
-											</ul>
-											<ul class="actions stacked">
-												<li><a href="#" class="button small">Small</a></li>
-												<li><a href="#" class="button small">Small</a></li>
-												<li><a href="#" class="button small">Small</a></li>
-											</ul>
-										</div>
-										<div class="col-6 col-12-medium">
-											<ul class="actions stacked">
-												<li><a href="#" class="button fit">Default</a></li>
-												<li><a href="#" class="button fit">Default</a></li>
-											</ul>
-											<ul class="actions stacked">
-												<li><a href="#" class="button small fit">Small</a></li>
-												<li><a href="#" class="button small fit">Small</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-
-								<section>
-									<h3>Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-
-								<section>
-									<h3>Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button large">Large</a></li>
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions fit">
-										<li><a href="#" class="button fit">Fit</a></li>
-										<li><a href="#" class="button fit">Fit</a></li>
-										<li><a href="#" class="button fit">Fit</a></li>
-									</ul>
-									<ul class="actions fit small">
-										<li><a href="#" class="button fit small">Fit + Small</a></li>
-										<li><a href="#" class="button fit small">Fit + Small</a></li>
-										<li><a href="#" class="button fit small">Fit + Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-upload">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-save">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button disabled">Disabled</span></li>
-										<li><span class="button disabled icon solid fa-download">Disabled</span></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3>Form</h3>
-									<form method="post" action="#">
-										<div class="row gtr-uniform">
-											<div class="col-6 col-12-xsmall">
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-											</div>
-											<div class="col-6 col-12-xsmall">
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-											</div>
-											<div class="col-12">
-												<select name="demo-category" id="demo-category">
-													<option value="">- Category -</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-normal" name="demo-priority">
-												<label for="demo-priority-normal">Normal</label>
-											</div>
-											<div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="col-6 col-12-small">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="col-6 col-12-small">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="col-12">
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-											<div class="col-12">
-												<ul class="actions">
-													<li><input type="submit" value="Send Message" /></li>
-													<li><input type="reset" value="Reset" /></li>
-												</ul>
-											</div>
-										</div>
-									</form>
-								</section>
-
-								<section>
-									<h3>Image</h3>
-									<h4>Fit</h4>
-									<div class="box alt">
-										<div class="row gtr-uniform">
-											<div class="col-12"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-										</div>
-									</div>
-									<h4>Left &amp; Right</h4>
-									<p><span class="image left"><img src="images/pic07.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-									<p><span class="image right"><img src="images/pic04.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-								</section>
-
-							</article>
-						-->
-
-						<!-- Pagination -->
-							<!-- <ul class="actions pagination">
-								<li><a href="" class="disabled button large previous">Previous Page</a></li>
-								<li><a href="#" class="button large next">Next Page</a></li>
-							</ul> -->
-
-					</div>
-
-				<!-- Sidebar -->
-					<section id="sidebar">
-
-						<!-- Intro -->
-							<section id="intro">
-								<a href="#" class="logo"><img src="https://media-exp1.licdn.com/dms/image/C5603AQFfITdgiKG64Q/profile-displayphoto-shrink_400_400/0/1629769350297?e=1661990400&v=beta&t=KcqAjhP2qBUxU1ersY6wQZesnoc-0SZiCSzXevcbwU8" alt="" /></a>
-								<header>
-									<h2>Abhinav Reddy Kowkuntla</h2>
-									<p>Perception | Navigation | Sensor Fusion | Robotics </p>
-								</header>
-							</section>
-
-						<!-- Mini Posts -->
-							<!-- <section>
-								<div class="mini-posts"> -->
-
-									<!-- Mini Post -->
-										<!-- <article class="mini-post">
-											<header>
-												<h3><a href="single.html">Caterpillar</a></h3>
-												<time class="published" datetime="2015-10-20">October 20, 2015</time>
-												<a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a>
-											</header>
-											<a href="single.html" class="image"><img src="images/pic04.jpg" alt="" /></a>
-										</article> -->
-
-									<!-- Mini Post -->
-										<!-- <article class="mini-post">
-											<header>
-												<h3><a href="single.html">Rutrum neque accumsan</a></h3>
-												<time class="published" datetime="2015-10-19">October 19, 2015</time>
-												<a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a>
-											</header>
-											<a href="single.html" class="image"><img src="images/pic05.jpg" alt="" /></a>
-										</article> -->
-
-									<!-- Mini Post -->
-										<!-- <article class="mini-post">
-											<header>
-												<h3><a href="single.html">Odio congue mattis</a></h3>
-												<time class="published" datetime="2015-10-18">October 18, 2015</time>
-												<a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a>
-											</header>
-											<a href="single.html" class="image"><img src="images/pic06.jpg" alt="" /></a>
-										</article> -->
-
-									<!-- Mini Post -->
-										<!-- <article class="mini-post">
-											<header>
-												<h3><a href="single.html">Enim nisl veroeros</a></h3>
-												<time class="published" datetime="2015-10-17">October 17, 2015</time>
-												<a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a>
-											</header>
-											<a href="single.html" class="image"><img src="images/pic07.jpg" alt="" /></a>
-										</article> -->
-
-								<!-- </div>
-							</section> -->
-
-						<!-- Posts List -->
-							<!-- <section>
-								<ul class="posts">
-									<li>
-										<article>
-											<header>
-												<h3><a href="single.html">Lorem ipsum fermentum ut nisl vitae</a></h3>
-												<time class="published" datetime="2015-10-20">October 20, 2015</time>
-											</header>
-											<a href="single.html" class="image"><img src="images/pic08.jpg" alt="" /></a>
-										</article>
-									</li>
-									<li>
-										<article>
-											<header>
-												<h3><a href="single.html">Convallis maximus nisl mattis nunc id lorem</a></h3>
-												<time class="published" datetime="2015-10-15">October 15, 2015</time>
-											</header>
-											<a href="single.html" class="image"><img src="images/pic09.jpg" alt="" /></a>
-										</article>
-									</li>
-									<li>
-										<article>
-											<header>
-												<h3><a href="single.html">Euismod amet placerat vivamus porttitor</a></h3>
-												<time class="published" datetime="2015-10-10">October 10, 2015</time>
-											</header>
-											<a href="single.html" class="image"><img src="images/pic10.jpg" alt="" /></a>
-										</article>
-									</li>
-									<li>
-										<article>
-											<header>
-												<h3><a href="single.html">Magna enim accumsan tortor cursus ultricies</a></h3>
-												<time class="published" datetime="2015-10-08">October 8, 2015</time>
-											</header>
-											<a href="single.html" class="image"><img src="images/pic11.jpg" alt="" /></a>
-										</article>
-									</li>
-									<li>
-										<article>
-											<header>
-												<h3><a href="single.html">Congue ullam corper lorem ipsum dolor</a></h3>
-												<time class="published" datetime="2015-10-06">October 7, 2015</time>
-											</header>
-											<a href="single.html" class="image"><img src="images/pic12.jpg" alt="" /></a>
-										</article>
-									</li>
-								</ul>
-							</section> -->
-
-						<!-- About -->
-							<section class="blurb">
-								<h2 id="About">About</h2>
-								<img src="images/Abhinav.jpg" alt="Profile Photo" style="width:300px; height:auto; border-radius:20%; display:block; margin-bottom:20px;">
-								<p>Hello! I’m Abhinav.
-
-									My fascination with robotics dates back to my school days.
-									 I’ve always been captivated by the idea of automating machines to enhance both efficiency and human safety. 
-									 The potential of creating systems where robots—whether humanoids, robotic arms, or autonomous vehicles—assist humans, has always inspired me. 
-									 I truly believe that such innovations will not only improve life on Earth but could play a crucial role in making life safer on any planet, or even across galaxies.
-									
-									<ul class="actions">
-								</ul>
-							</section>
-
-						<!-- Footer -->
-							<!-- <section id="footer">
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
-									<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-								</ul>
-								<p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
-							</section> -->
-
-					</section>
+				<!-- Card 4: Sensor Stack -->
+				<div class="expertise-card">
+					<div class="expertise-icon"><i class="fas fa-layer-group"></i></div>
+					<h3>Sensor Stack</h3>
+					<ul>
+						<li>LIDAR (Velodyne, Ouster)</li>
+						<li>IMU (MicroStrain, Xsens)</li>
+						<li>Cameras (Realsense, FLIR)</li>
+						<li>GPS (RTK, Differential)</li>
+					</ul>
+				</div>
 
 			</div>
+		</div>
+	</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<!-- Work Experience Timeline -->
+	<section class="timeline-section">
+		<div class="container">
+			<div class="section-header">
+				<h2>Work Experience</h2>
+			</div>
+			<div class="timeline">
 
-	</body>
+				<!-- Experience 1 -->
+				<div class="timeline-item left">
+					<div class="timeline-date">Jan 2024 - Present</div>
+					<div class="timeline-content">
+						<h3>Northeastern Field Robotics Lab</h3>
+						<h4>Graduate Research Assistant | Boston, MA</h4>
+						<ul>
+							<li>Designing custom multimodal stereo setup (RGB + Thermal) with unified calibration.</li>
+							<li>Building end-to-end deep learning pipelines for dense correspondences and depth
+								estimation.</li>
+							<li>Developed lightweight Transformer-based alternative to RAFT-Stereo (14x faster inference
+								on Jetson Orin Nano).</li>
+							<li>Supporting calibration and ROS bag pipelines for multi-sensor data.</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Experience 2 -->
+				<div class="timeline-item right">
+					<div class="timeline-date">Jan 2021 - Dec 2023</div>
+					<div class="timeline-content">
+						<h3>Robert Bosch</h3>
+						<h4>Function Owner / Lead System Developer | India, Hungary</h4>
+						<ul>
+							<li>Led development of ADAS software (Automatic Parking) in Simulink/C++ for Honda, Nissan,
+								Mazda.</li>
+							<li>Delivered $2M+ in production features compliant with AUTOSAR.</li>
+							<li>Improved efficiency by automating workflows, reducing release timelines by 1-2 weeks.
+							</li>
+							<li>Supervised GitHub/Jenkins for a team of 20 associates.</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- Featured Projects Carousel -->
+	<section class="carousel-section">
+		<div class="container">
+			<div class="section-header">
+				<h2>Featured Projects</h2>
+			</div>
+
+			<!-- Swiper -->
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper">
+
+					<!-- Slide 1 -->
+					<div class="swiper-slide" onclick="window.location.href='project-mosaicing.html'">
+						<img src="assets/108_postfactor_graph.png" alt="Underwater Mosaicing">
+						<div class="slide-overlay">
+							<h3>Large-Scale Underwater Mosaicing</h3>
+							<p>GTSAM factor graph optimization</p>
+						</div>
+					</div>
+
+					<!-- Slide 2 -->
+					<div class="swiper-slide" onclick="window.location.href='project-sfm.html'">
+						<img src="assets/buddha_014.png" alt="3D Reconstruction">
+						<div class="slide-overlay">
+							<h3>Multi-view 3D Reconstruction</h3>
+							<p>Bundle Adjustment & Sparse Reconstruction</p>
+						</div>
+					</div>
+
+					<!-- Slide 3 -->
+					<div class="swiper-slide" onclick="window.location.href='project-segmentation.html'">
+						<img src="assets/underwater.png" alt="Underwater Segmentation">
+						<div class="slide-overlay">
+							<h3>Underwater Image Segmentation</h3>
+							<p>Self-Supervised Learning with SimCLR</p>
+						</div>
+					</div>
+
+					<!-- Slide 4 -->
+					<div class="swiper-slide" onclick="window.location.href='project-depth.html'">
+						<img src="assets/Depth_Map_1.png" alt="Depth Estimation">
+						<div class="slide-overlay">
+							<h3>Efficient Depth Estimation</h3>
+							<p>RAFT-Stereo & NEUFlow-V2</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Projects Modal (All Projects) -->
+	<div id="projects-modal" class="projects-modal">
+		<div class="modal-close" id="modal-close">&times;</div>
+		<div class="container">
+			<div class="section-header">
+				<h2>All Projects</h2>
+			</div>
+
+			<div class="projects-grid">
+
+				<!-- New Project: Multi-Robot SLAM -->
+				<div class="project-card">
+					<div class="project-thumb">
+						<img src="images/pic01.jpg" alt="Multi-Robot SLAM"> <!-- Placeholder -->
+					</div>
+					<div class="project-info">
+						<h3>Multi-Robot SLAM & Dataset</h3>
+						<p>Deployed fleet of 5 robots with RGB/LiDAR/IMU for large-scale data collection. Synchronized
+							1TB+ data for SLAM benchmarking.</p>
+						<div class="tags">
+							<span class="tag">ROS2</span>
+							<span class="tag">SLAM</span>
+							<span class="tag">Robotics</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- New Project: GPS-IMU Fusion -->
+				<div class="project-card">
+					<div class="project-thumb">
+						<img src="images/pic01.jpg" alt="GPS-IMU Fusion"> <!-- Placeholder -->
+					</div>
+					<div class="project-info">
+						<h3>GPS-IMU Fusion</h3>
+						<p>Implemented 2D pose estimation pipeline fusing GPS and IMU data using Extended Kalman Filter
+							(EKF).</p>
+						<div class="tags">
+							<span class="tag">Python</span>
+							<span class="tag">Kalman Filter</span>
+							<span class="tag">Sensor Fusion</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Existing Project: Mosaicing -->
+				<a href="project-mosaicing.html" class="project-card">
+					<div class="project-thumb">
+						<img src="assets/108_postfactor_graph.png" alt="Mosaicing">
+					</div>
+					<div class="project-info">
+						<h3>Underwater Mosaicing</h3>
+						<p>Homography & GTSAM factor graph optimization for 200+ images.</p>
+						<div class="tags">
+							<span class="tag">OpenCV</span>
+							<span class="tag">GTSAM</span>
+						</div>
+					</div>
+				</a>
+
+				<!-- Existing Project: SFM -->
+				<a href="project-sfm.html" class="project-card">
+					<div class="project-thumb">
+						<img src="assets/buddha_014.png" alt="SFM">
+					</div>
+					<div class="project-info">
+						<h3>3D Reconstruction</h3>
+						<p>Sparse 3D Reconstruction using Bundle Adjustment.</p>
+						<div class="tags">
+							<span class="tag">Python</span>
+							<span class="tag">OpenCV</span>
+						</div>
+					</div>
+				</a>
+
+				<!-- Existing Project: Segmentation -->
+				<a href="project-segmentation.html" class="project-card">
+					<div class="project-thumb">
+						<img src="assets/underwater.png" alt="Segmentation">
+					</div>
+					<div class="project-info">
+						<h3>Underwater Segmentation</h3>
+						<p>Self-Supervised Pre-trained model using SimCLR & U-Net.</p>
+						<div class="tags">
+							<span class="tag">PyTorch</span>
+							<span class="tag">Deep Learning</span>
+						</div>
+					</div>
+				</a>
+
+				<!-- Existing Project: Depth -->
+				<a href="project-depth.html" class="project-card">
+					<div class="project-thumb">
+						<img src="assets/Depth_Map_1.png" alt="Depth">
+					</div>
+					<div class="project-info">
+						<h3>Depth Estimation</h3>
+						<p>RAFT-Stereo and NEUFlow-V2 integration.</p>
+						<div class="tags">
+							<span class="tag">DL</span>
+							<span class="tag">Stereo</span>
+						</div>
+					</div>
+				</a>
+
+				<!-- Existing Project: RCM -->
+				<a href="project-rcm.html" class="project-card">
+					<div class="project-thumb">
+						<img src="images/pic01.jpg" alt="RCM">
+					</div>
+					<div class="project-info">
+						<h3>RCM Healthcare Robot</h3>
+						<p>Remote Center of Motion robot model with kinematic analysis.</p>
+						<div class="tags">
+							<span class="tag">SolidWorks</span>
+						</div>
+					</div>
+				</a>
+
+				<!-- Existing Project: SLAM -->
+				<a href="project-slam.html" class="project-card">
+					<div class="project-thumb">
+						<img src="images/pic01.jpg" alt="SLAM">
+					</div>
+					<div class="project-info">
+						<h3>SLAM Analysis</h3>
+						<p>Comparative Analysis of Lio-Sam and Lego-Loam.</p>
+						<div class="tags">
+							<span class="tag">ROS</span>
+							<span class="tag">Gazebo</span>
+						</div>
+					</div>
+				</a>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<section id="footer">
+		<ul class="icons">
+			<li><a href="https://www.linkedin.com/in/abhinav-reddy-kowkuntla-041059170/" target="_blank"><i
+						class="fab fa-linkedin"></i><span class="label">LinkedIn</span></a></li>
+			<li><a href="https://gitlab.com/kowkuntla-a" target="_blank"><i class="fab fa-github"></i><span
+						class="label">Github</span></a></li>
+			<li><a href="mailto:kowkuntla.a@northeastern.edu"><i class="fas fa-envelope"></i><span
+						class="label">Email</span></a></li>
+		</ul>
+		<p class="copyright">&copy; Abhinav Reddy Kowkuntla.</p>
+	</section>
+
+	<!-- Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+	<!-- Main Script -->
+	<script>
+		// Initialize Swiper
+		var swiper = new Swiper(".mySwiper", {
+			effect: "coverflow",
+			grabCursor: true,
+			centeredSlides: true,
+			slidesPerView: "auto",
+			coverflowEffect: {
+				rotate: 0, // Flat
+				stretch: 0,
+				depth: 100,
+				modifier: 1,
+				slideShadows: true,
+			},
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+			loop: true,
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+		});
+
+		// Projects Modal Logic
+		const projectsLink = document.getElementById('projects-link');
+		const projectsModal = document.getElementById('projects-modal');
+		const modalClose = document.getElementById('modal-close');
+
+		projectsLink.addEventListener('click', (e) => {
+			e.preventDefault();
+			projectsModal.style.display = 'block';
+			document.body.style.overflow = 'hidden'; // Disable scroll
+		});
+
+		modalClose.addEventListener('click', () => {
+			projectsModal.style.display = 'none';
+			document.body.style.overflow = 'auto'; // Enable scroll
+		});
+
+		// Close modal if clicked outside
+		window.addEventListener('click', (e) => {
+			if (e.target == projectsModal) {
+				projectsModal.style.display = 'none';
+				document.body.style.overflow = 'auto';
+			}
+		});
+
+		// Check for #projects hash on load
+		window.addEventListener('load', () => {
+			if (window.location.hash === '#projects') {
+				projectsModal.style.display = 'block';
+				document.body.style.overflow = 'hidden';
+			}
+		});
+	</script>
+</body>
+
 </html>

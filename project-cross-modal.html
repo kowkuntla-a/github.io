@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Cross-Modal Synchronization and Calibration - Abhinav Reddy Kowkuntla</title>
+    <link rel="icon" href="images/logo.jpg">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header style="position: relative; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+        <div class="nav-container">
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="assets/Abhinav Reddy Kowkuntla.pdf" target="_blank">Resume</a>
+                <a href="https://www.linkedin.com/in/abhinav-reddy-kowkuntla-041059170/" target="_blank">LinkedIn</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container" style="padding-top: 4rem; max-width: 900px; margin: 0 auto; text-align: center;">
+
+        <!-- Post -->
+        <article class="post" style="border: none; background: transparent; box-shadow: none;">
+            <header style="margin-bottom: 3rem;">
+                <div class="title">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 0.5rem;">Cross-Modal Synchronization and Calibration
+                    </h2>
+                    <p style="color: #666; font-size: 1.2rem;">Infrared–RGB Stereo Depth Transfer</p>
+                </div>
+                <div class="meta" style="margin-top: 1rem;">
+                    <time class="published" datetime="2024-12-01" style="color: #0077b5; font-weight: 600;">Fall
+                        2024</time>
+                </div>
+            </header>
+
+            <!-- Hardware Rig Images -->
+            <div class="image-container"
+                style="margin-bottom: 3rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 300px;">
+                    <img src="images/cross_modal_rig_front.jpg" alt="Hardware Rig Front View"
+                        style="width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <p style="font-style: italic; color: #888; margin-top: 0.5rem;">Front View: RGB & Thermal Stereo
+                        Pairs</p>
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <img src="images/cross_modal_rig_top.jpg" alt="Hardware Rig Top View"
+                        style="width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <p style="font-style: italic; color: #888; margin-top: 0.5rem;">Top View: Synchronization Hardware
+                    </p>
+                </div>
+            </div>
+
+            <!-- Text Content -->
+            <div class="text-content"
+                style="text-align: left; max-width: 800px; margin: 0 auto; font-size: 1.1rem; line-height: 1.8; color: #444;">
+
+                <h3 style="margin-bottom: 1rem; color: #222;">Cross-Modal Distillation</h3>
+                <p>
+                    This project tackles the challenge of estimating depth from thermal imagery where ground-truth data
+                    is scarce.
+                    <strong>Strategy:</strong> We leverage the rich geometric feature representations of a pre-trained
+                    RGB depth estimation model (the "Teacher") to supervise and train a lightweight Infrared stereo
+                    network (the "Student").
+                    <br>
+                    <strong>Method:</strong> By transferring depth knowledge from the data-rich RGB domain, we enable
+                    the IR pipeline to learn robust depth estimation without requiring massive annotated thermal
+                    datasets.
+                </p>
+
+                <h3 style="margin-bottom: 1rem; color: #222;">Spatio-Temporal Infrastructure</h3>
+                <p>
+                    To validate this distillation process, I designed and built a custom hardware-software pipeline that
+                    bridges the two modalities, ensuring valid data generation for training and evaluation.
+                </p>
+                <ul style="list-style-type: disc; padding-left: 1.5rem;">
+                    <li style="margin-bottom: 0.5rem;">
+                        <strong>Temporal Alignment (Time Sync):</strong> Implemented hardware triggering to achieve
+                        microsecond-level synchronization between RGB and Infrared sensors, effectively eliminating
+                        motion artifacts in dynamic scenes.
+                    </li>
+                    <li style="margin-bottom: 0.5rem;">
+                        <strong>Spatial Alignment (Calibration):</strong> Developed a unified calibration framework to
+                        accurately estimate extrinsic transformations between the multimodal sensors, enabling precise
+                        reprojection and overlay of visual data.
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- Video Section -->
+            <div class="video-container" style="margin-top: 3rem; margin-bottom: 3rem;">
+                <h3 style="margin-bottom: 1.5rem;">Overlay Visualization</h3>
+                <video controls style="max-width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <source src="images/MP3/Columbus_Ave_cropped.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p style="font-style: italic; color: #888; margin-top: 0.5rem;">
+                    Synchronized overlay of RGB and Thermal streams demonstrating precise spatial and temporal
+                    alignment.
+                </p>
+            </div>
+
+            <footer style="margin-top: 3rem; border-top: 1px solid #eee; padding-top: 2rem;">
+                <ul class="stats" style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                    <li
+                        style="background: rgba(0,119,181,0.1); color: #0077b5; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600;">
+                        Computer Vision</li>
+                    <li
+                        style="background: rgba(0,119,181,0.1); color: #0077b5; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600;">
+                        Sensor Fusion</li>
+                    <li
+                        style="background: rgba(0,119,181,0.1); color: #0077b5; padding: 0.5rem 1rem; border-radius: 20px; font-weight: 600;">
+                        Stereo Depth</li>
+                </ul>
+            </footer>
+        </article>
+
+    </div>
+
+    <!-- Footer -->
+    <section id="footer">
+        <ul class="icons">
+            <li><a href="https://www.linkedin.com/in/abhinav-reddy-kowkuntla-041059170/"
+                    class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+            <li><a href="https://gitlab.com/kowkuntla-a" class="icon brands fa-github"><span
+                        class="label">Github</span></a></li>
+            <li><a href="mailto:kowkuntla.a@northeastern.edu" class="icon solid fa-envelope"><span
+                        class="label">Email</span></a></li>
+        </ul>
+        <p class="copyright">&copy; Abhinav Reddy Kowkuntla.</p>
+    </section>
+
+</body>
+
+</html>

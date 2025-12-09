@@ -3,6 +3,7 @@
 
 <head>
     <title>Multi-view 3D Reconstruction - Abhinav Reddy Kowkuntla</title>
+    <link rel="icon" href="images/logo.jpg">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -59,6 +60,25 @@
                 <p>• Performed point cloud reconstruction on a set of 24 2D images using GTSAM.
                     <br>• Computed and optimized the final camera poses for 3D reconstruction using bundle adjustment
                     through GTSAM.
+                </p>
+            </div>
+
+            <!-- Gaussian Splatting Section -->
+            <div class="video-container" style="margin-top: 3rem; margin-bottom: 3rem;">
+                <h3 style="margin-bottom: 1rem; color: #222;">Advanced 3D Modeling: Gaussian Splatting</h3>
+                <p
+                    style="text-align: left; max-width: 800px; margin: 0 auto 1.5rem; font-size: 1.1rem; line-height: 1.8; color: #444;">
+                    Building upon the sparse reconstruction, I extended the project to generate a high-fidelity, dense
+                    3D model using <strong>Gaussian Splatting</strong>.
+                    This technique represents the scene as a collection of 3D Gaussians, allowing for real-time
+                    rendering with exceptional visual quality and detail preservation.
+                </p>
+                <video controls style="max-width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <source src="images/MP3/Gaussian_Splat.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+                <p style="font-style: italic; color: #888; margin-top: 0.5rem;">
+                    Flythrough of the 3D model generated via Gaussian Splatting.
                 </p>
             </div>
 
